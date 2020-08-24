@@ -3,7 +3,7 @@ from flask_cors import CORS
   
 import requests
 import bs4
-import ssl
+#import ssl
   
 '''
 https://s1.mde.nfu.edu.tw:7443/?semester=1082&courseno=0767
@@ -61,8 +61,8 @@ def studlist():
     #return  str(pselyr) + " + " +str(pseqno)
   
 # 即使在近端仍希望以 https 模式下執行
-context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-context.load_cert_chain('localhost.crt', 'localhost.key')
+#context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+#context.load_cert_chain('localhost.crt', 'localhost.key')
   
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
