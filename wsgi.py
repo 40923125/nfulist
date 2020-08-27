@@ -6,7 +6,7 @@ import bs4
 #import ssl
   
 '''
-https://s1.mde.nfu.edu.tw:7443/?semester=1082&courseno=0767
+https://nfulist.herokuapp.com/?semester=1082&courseno=0767
 cd
 2a 1082/0767
 2b 1082/0780
@@ -41,7 +41,7 @@ def studlist():
     
     headers = {'X-Requested-With': 'XMLHttpRequest'}
 
-    url = 'https://osa.nfu.edu.tw/query/studlist_ajax.php'
+    url = 'https://qry.nfu.edu.tw/studlist_ajax.php'
     post_var = {'pselyr': semester, 'pseqno': courseno}
   
     result = requests.post(url, data = post_var, headers = headers)
