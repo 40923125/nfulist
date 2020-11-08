@@ -6,6 +6,22 @@ import bs4
 #import ssl
   
 '''
+semester=1091
+
+courseno=0762
+
+cp
+
+1a 1091/0762
+
+1b 1091/0776
+
+cad
+
+2a 1091/0788
+
+2b 1091/0801
+
 https://nfulist.herokuapp.com/?semester=1082&courseno=0767
 cd
 2a 1082/0767
@@ -34,10 +50,12 @@ CORS(app)
 def studlist():
     semester = request.args.get('semester')
     courseno = request.args.get('courseno')
+    column = request.args.get('column')
+
     if semester == None:
-        semester = '1082'
+        semester = '1091'
     if courseno == None:
-        courseno = '0744'
+        courseno = '0762'
     
     headers = {'X-Requested-With': 'XMLHttpRequest'}
 
@@ -56,7 +74,11 @@ def studlist():
     output = ""
     for i in data[2:]:
         #print(i[0])
-        output +=i[0] + "\n"
+        if column == "True":
+            output +=i[0] + "</br>"
+        else:
+            output +=i[0] + "\n"
+        
     return output
     #return  str(pselyr) + " + " +str(pseqno)
   
