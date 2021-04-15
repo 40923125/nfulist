@@ -15,14 +15,12 @@ app = Flask(__name__)
 CORS(app)
  
 # for pythn 3.9,  在近端測試時仍需要設定 proxy, 若使用 Python 3.8 執行則會自動使用系統的 Proxy 設定
-'''
 proxy = 'http://[2001:288:6004:17::69]:3128'
  
 os.environ['http_proxy'] = proxy 
 os.environ['HTTP_PROXY'] = proxy
 os.environ['https_proxy'] = proxy
 os.environ['HTTPS_PROXY'] = proxy
-'''
 '''
 url:  'jclassroom_ajax.php',
 data: { pselyr: pselyr, pselclssroom: pselclssroom },
@@ -31,14 +29,10 @@ data: { pselyr: pselyr, pselclssroom: pselclssroom },
 # 修改步驟 3/6, 試著將程式改為網際模式, 需要套用 Flask 的網際 decorator
 @app.route('/')
 def timeTableList():
-    '''
     semester = '1092'
     classroomno = 'BGA0810'
     column = True
-    '''
-    semester = request.args.get('semester')
-    classroomno = request.args.get('classroomno')
-
+ 
     if semester == None:
         semester = '1092'
     if classroomno == None:
