@@ -74,7 +74,7 @@ def timeTableList():
     #print(output)
     # 修改步驟 5/6 , 因為已經將原先可列印出程式的步驟改為 function, 因此必須以 return 將擷取到的網頁資料傳回
     return output
-@app.route('/test')
+@app.route('/git')
 def timeTest():
      return "<a href='https://github.com/40923125'>github</a> <a href='https://dashboard.heroku.com/apps'>heroku</a>"
      
