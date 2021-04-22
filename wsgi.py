@@ -76,7 +76,16 @@ def timeTableList():
     return output
 @app.route('/git')
 def timeTest():
-     return "<a href='https://github.com/40923125'>github</a> <a href='https://dashboard.heroku.com/apps'>heroku</a>"
+     return "網際網路使用倉儲: <br /><br />\n<a href='https://github.com/40923125'>github</a> <a href='https://dashboard.heroku.com/apps'>heroku</a>"
+@app.route('/classroom6')
+def timeTest1():
+     return "BGA6樓: <br /><br />\n<a href='https://h40923125.herokuapp.com/?classroomno=BGA0611'>BGA0611</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0620'>BGA0620</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0640'>BGA0640</a>"
+@app.route('/classroom7')
+def timeTest2():
+     return "BGA7樓: <br /><br />\n<a href='https://h40923125.herokuapp.com/?classroomno=BGA0710'>BGA0710</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0730'>BGA0730</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0760'>BGA0760</a>"
+@app.route('/classroom8')
+def timeTest3():
+     return "BGA8樓: <br /><br />\n<a href='https://h40923125.herokuapp.com/?classroomno=BGA0820'>BGA0820</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0823'>BGA0823</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0830'>BGA0830</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0842'>BGA0842</a>"
      
 # 修改步驟 4/6 , 因為改寫為網際程式後, 下列將內容存檔並自動呼叫 Firefox 的程式碼不再適用, 必須蓋掉
 '''
