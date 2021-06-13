@@ -76,16 +76,22 @@ def timeTableList():
     return output
 @app.route('/git')
 def timeTest():
-     return "網際網路使用倉儲: <br /><br />\n<a href='https://github.com/40923125'>github</a> <a href='https://dashboard.heroku.com/apps'>heroku</a>"
+     return "網際網路使用倉儲: <br /><br /><a href='https://github.com/40923125'>github</a></br><a href='https://dashboard.heroku.com/apps'>heroku</a>"
 @app.route('/classroom6')
 def timeTest1():
-     return "BGA6樓: <br /><br />\n<a href='https://h40923125.herokuapp.com/?classroomno=BGA0611'>BGA0611</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0620'>BGA0620</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0640'>BGA0640</a>"
+     return "BGA6樓: <br /><br /><a href='https://h40923125.herokuapp.com/?classroomno=BGA0611'>BGA0611</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0620'>BGA0620</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0640'>BGA0640</a>"
 @app.route('/classroom7')
 def timeTest2():
-     return "BGA7樓: <br /><br />\n<a href='https://h40923125.herokuapp.com/?classroomno=BGA0710'>BGA0710</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0730'>BGA0730</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0760'>BGA0760</a>"
+     return "BGA7樓: <br /><br /><a href='https://h40923125.herokuapp.com/?classroomno=BGA0710'>BGA0710</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0730'>BGA0730</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0760'>BGA0760</a>"
 @app.route('/classroom8')
 def timeTest3():
-     return "BGA8樓: <br /><br />\n<a href='https://h40923125.herokuapp.com/?classroomno=BGA0820'>BGA0820</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0823'>BGA0823</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0830'>BGA0830</a> <a href='https://h40923125.herokuapp.com/?classroomno=BGA0842'>BGA0842</a>"
+     return "BGA8樓: <br /><br /><a href='https://h40923125.herokuapp.com/?classroomno=BGA0820'>BGA0820</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0823'>BGA0823</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0830'>BGA0830</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0842'>BGA0842</a>"
+@app.route('/classroom9')
+def timeTest4():
+     return "BGA9樓: <br /><br /><a href='https://h40923125.herokuapp.com/?classroomno=BGA0901'>BGA0901</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0911'>BGA0911</a></br><a href='https://h40923125.herokuapp.com/?classroomno=BGA0933'>BGA0933</a>"
+@app.route('/classroom')
+def timeTest5():
+     return "109學年度第2學期BGA課表: <br /><br /><a href='https://h40923125.herokuapp.com/classroom6'>六樓</a></br><a href='https://h40923125.herokuapp.com/classroom7'>七樓</a></br><a href='https://h40923125.herokuapp.com/classroom8'>八樓</a></br><a  href='https://h40923125.herokuapp.com/classroom9'>九樓</a>"
      
 # 修改步驟 4/6 , 因為改寫為網際程式後, 下列將內容存檔並自動呼叫 Firefox 的程式碼不再適用, 必須蓋掉
 '''
